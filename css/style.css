@@ -1016,11 +1016,13 @@ input, textarea, select{
 	0%{
 		-webkit-transform: scale(0.8);
 		transform: scale(0.8);
+		opacity: 0;
 	
 	}
 	100%{
 		-webkit-transform: scale(1);
 		transform: scale(1);
+		opacity: 1;
 	}
 }
 
@@ -1028,11 +1030,13 @@ input, textarea, select{
 	0%{
 		-webkit-transform: scale(0.8);
 		transform: scale(0.8);
-
+		opacity: 0;
 	}
+
 	100%{
 		-webkit-transform: scale(1);
 		transform: scale(1);
+		opacity: 1;
 	}
 }
 
@@ -1109,16 +1113,18 @@ input, textarea, select{
 .lightbox .lightbox-content img{
 	height: auto;
 	width: auto;
-	max-height: 430px;
+	max-height: 500px;
 	max-width: 100%;
 	cursor: pointer;
+	display: block;
+	padding: 40px 0 30px;
 }
 .lightbox .lightbox-content{
 	position: relative;
 }
 .lightbox .lightbox-content .lightbox-caption{
 	position: absolute;
-	bottom: -20px;
+	bottom: 0px;
 	left: 0;
 	width: 100%;
 	display: -ms-flexbox;
@@ -1128,6 +1134,7 @@ input, textarea, select{
 	font-size: 16px;
 	color: #ffffff;
 	font-weight: 400;
+	z-index: -1;
 
 }
 
@@ -1135,8 +1142,8 @@ input, textarea, select{
 	position: absolute;
 	height: 40px;
 	width: 40px;
-	
-	top: -40px;
+	cursor: pointer;
+	top: 0px;
 	right: 0px;
 	font-size: 32px;
 	text-align: right;
@@ -1158,10 +1165,19 @@ input, textarea, select{
 	-webkit-transition: all 0.3s ease;
 	transition: all 0.3s ease;
 }
-.lightbox .lightbox-controls .prev-item:active,
-.lightbox .lightbox-controls .prev-item:active{
+
+.lightbox .lightbox-controls .prev-item:hover,
+.lightbox .lightbox-controls .prev-item:hover{
 	-webkit-transform: scale(1.1);
 	transform: scale(1.1);
+	cursor: pointer;
+}
+
+.lightbox .lightbox-controls .prev-item:active,
+.lightbox .lightbox-controls .prev-item:active{
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	cursor: pointer;
 }
 
 
