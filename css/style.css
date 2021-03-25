@@ -1008,6 +1008,7 @@ input, textarea, select{
 	}
 }
 @media (max-width: 991px){
+	#portfolio-filter-id,
 	.blog .blog-item,
 	.portfolio .portfolio-item,
 	.service .service-item{
@@ -1018,6 +1019,7 @@ input, textarea, select{
 }
 
 @media (max-width: 767px){
+
 	.contact .contact-form .col-6,
 	.blog .blog-item,
 	.service .service-item,
@@ -1035,6 +1037,7 @@ input, textarea, select{
 }
 
 @media (max-width: 575px){
+	#portfolio-filter-id,
 	.contact .contact-info-item,
 	.portfolio .portfolio-item{
 		-ms-flex: 0 0 100%;
